@@ -111,4 +111,4 @@ const Farm = (type) => {
 };
 
 BuyPremium();
-Farm("b");
+// Farm("b");
