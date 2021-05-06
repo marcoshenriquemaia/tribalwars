@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Tribal Wars compra premium automática",
+  "short_name": "kbra BOT TW",
+  "description": "Script para tribalwars gratuito e português",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["src/index.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["src/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "TW script",
+    "default_popup": "index.html"
+  },
+  "permissions": ["activeTab"]
+}
